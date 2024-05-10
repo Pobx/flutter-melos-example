@@ -1,0 +1,11 @@
+name: flutter_melos_example
+
+packages:
+  - packages/*
+
+scripts:
+  analyze:
+    exec: dart analyze .
+  format:
+    run: melos exec dart format . --fix
+    description: Run `dart format` for all packages.
