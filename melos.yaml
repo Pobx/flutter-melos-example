@@ -3,6 +3,13 @@ name: flutter_melos_example
 packages:
   - packages/*
 
+command:
+  version:
+    # Only allow versioning to happen on main branch.
+    branch: main
+    # Generates a link to a prefilled Github release creation page.
+    releaseUrl: true
+
 scripts:
   analyze:
     exec: dart analyze .
